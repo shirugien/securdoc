@@ -20,8 +20,8 @@ const ServicesPage = () => {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-blue-900 mb-6">Produits et Services</h1>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <h1 className="text-5xl font-bold text-blue-900 mb-6 animate-fade-in-up">Produits et Services</h1>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed animate-fade-in-up animation-delay-200">
             Une gamme complète de solutions de sécurisation documentaire adaptées aux besoins 
             spécifiques de nos partenaires institutionnels et privés
           </p>
@@ -29,13 +29,21 @@ const ServicesPage = () => {
 
         {/* Services principaux */}
         <section className="mb-20">
-          <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center">Nos Services</h2>
+          <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center animate-fade-in-up">Nos Services</h2>
           
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             
             {/* Conception et impression */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mb-6 flex items-center justify-center">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-3 hover:scale-105 animate-fade-in-up animation-delay-300 group relative overflow-hidden">
+              {/* Background image */}
+              <div className="absolute top-0 right-0 w-20 h-20 opacity-5">
+                <img 
+                  src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" 
+                  alt="Documents" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mb-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                 <FileText className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-blue-900 mb-4">Conception & Impression</h3>
@@ -63,8 +71,16 @@ const ServicesPage = () => {
             </div>
 
             {/* Éléments de sécurité */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mb-6 flex items-center justify-center">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-3 hover:scale-105 animate-fade-in-up animation-delay-500 group relative overflow-hidden">
+              {/* Background image */}
+              <div className="absolute top-0 right-0 w-20 h-20 opacity-5">
+                <img 
+                  src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" 
+                  alt="Security" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mb-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                 <Shield className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-blue-900 mb-4">Éléments de Sécurité</h3>
@@ -92,8 +108,16 @@ const ServicesPage = () => {
             </div>
 
             {/* Services d'accompagnement */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mb-6 flex items-center justify-center">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-3 hover:scale-105 animate-fade-in-up animation-delay-700 group relative overflow-hidden">
+              {/* Background image */}
+              <div className="absolute top-0 right-0 w-20 h-20 opacity-5">
+                <img 
+                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" 
+                  alt="Support" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mb-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                 <Settings className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-blue-900 mb-4">Accompagnement</h3>
@@ -124,15 +148,23 @@ const ServicesPage = () => {
 
         {/* Technologies détaillées */}
         <section className="mb-20">
-          <div className="bg-gradient-to-br from-blue-50 to-white rounded-3xl p-12 shadow-lg">
-            <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center">
+          <div className="bg-gradient-to-br from-blue-50 to-white rounded-3xl p-12 shadow-lg relative overflow-hidden">
+            {/* Background pattern */}
+            <div className="absolute inset-0 opacity-5">
+              <img 
+                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop" 
+                alt="Technology pattern" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center animate-fade-in-up relative z-10">
               Technologies de Sécurisation
             </h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               
-              <div className="text-center">
-                <div className="bg-blue-600 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+              <div className="text-center animate-fade-in-up animation-delay-300 group">
+                <div className="bg-blue-600 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                   <Sparkles className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-blue-900 mb-3">Filigrane</h3>
@@ -141,8 +173,8 @@ const ServicesPage = () => {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="bg-blue-600 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+              <div className="text-center animate-fade-in-up animation-delay-500 group">
+                <div className="bg-blue-600 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                   <Star className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-blue-900 mb-3">Hologrammes</h3>
@@ -151,8 +183,8 @@ const ServicesPage = () => {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="bg-blue-600 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+              <div className="text-center animate-fade-in-up animation-delay-700 group">
+                <div className="bg-blue-600 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                   <Eye className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-blue-900 mb-3">Encres Spéciales</h3>
@@ -161,8 +193,8 @@ const ServicesPage = () => {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="bg-blue-600 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+              <div className="text-center animate-fade-in-up animation-delay-900 group">
+                <div className="bg-blue-600 rounded-full p-6 w-20 h-20 mx-auto mb-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                   <QrCode className="h-10 w-10 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-blue-900 mb-3">QR Codes</h3>

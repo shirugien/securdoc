@@ -30,16 +30,24 @@ const TechnologyPage = () => {
 
         {/* Technologies principales */}
         <section className="mb-20">
-          <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center">
+          <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center animate-fade-in-up">
             Technologies de Pointe
           </h2>
           
           <div className="grid lg:grid-cols-2 gap-12">
             
             {/* Papiers sécurisés */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:scale-105 animate-fade-in-up animation-delay-300 relative overflow-hidden group">
+              {/* Background image */}
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
+                <img 
+                  src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" 
+                  alt="Secure papers" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex items-center mb-6">
-                <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mr-6 flex items-center justify-center">
+                <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mr-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                   <Layers className="h-8 w-8 text-white" />
                 </div>
                 <div>
@@ -63,9 +71,17 @@ const TechnologyPage = () => {
             </div>
 
             {/* Encres spéciales */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:scale-105 animate-fade-in-up animation-delay-500 relative overflow-hidden group">
+              {/* Background image */}
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
+                <img 
+                  src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" 
+                  alt="Special inks" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex items-center mb-6">
-                <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mr-6 flex items-center justify-center">
+                <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mr-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                   <Eye className="h-8 w-8 text-white" />
                 </div>
                 <div>
@@ -89,9 +105,17 @@ const TechnologyPage = () => {
             </div>
 
             {/* Hologrammes */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:scale-105 animate-fade-in-up animation-delay-700 relative overflow-hidden group">
+              {/* Background image */}
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
+                <img 
+                  src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" 
+                  alt="Holograms" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex items-center mb-6">
-                <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mr-6 flex items-center justify-center">
+                <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mr-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                   <Sparkles className="h-8 w-8 text-white" />
                 </div>
                 <div>
@@ -115,9 +139,17 @@ const TechnologyPage = () => {
             </div>
 
             {/* QR Codes sécurisés */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:scale-105 animate-fade-in-up animation-delay-900 relative overflow-hidden group">
+              {/* Background image */}
+              <div className="absolute top-0 right-0 w-32 h-32 opacity-5">
+                <img 
+                  src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" 
+                  alt="QR codes" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex items-center mb-6">
-                <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mr-6 flex items-center justify-center">
+                <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mr-6 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-transform duration-300">
                   <QrCode className="h-8 w-8 text-white" />
                 </div>
                 <div>
